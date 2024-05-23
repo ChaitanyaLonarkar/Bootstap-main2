@@ -1,0 +1,206 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  /* height: 4rem; */
+  background-color: white;
+  padding: 1rem;
+}
+
+.switch p,
+.companies p {
+  font-size: 14px;
+}
+
+main {
+  /* background-color: #F4F4F4; */
+  /* background-color: black; */
+  background-color: rgb(172 200 236 / 22%);
+  gap: 1rem;
+  font-size: 14px;
+  height: fit-content;
+}
+.navi-items i {
+  background-color: rgb(172 200 236 / 22%);
+  width: 37px;
+  text-align: center;
+}
+
+.navigations{
+  margin: 2rem 2rem 0.5rem 2rem;
+  padding-right: 20px;
+  gap: 1.6rem;
+}
+/* .logo img,  img{
+size: 4rem;
+} */
+.company .switch p,
+span {
+  /* color: #62C7FD; */
+  color: #33aaeb;
+}
+ul li a {
+  text-decoration: none;
+  color: rgb(143 142 142);
+  font-size: smaller;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+}
+.activee {
+  background: #c3d4e64d;
+  color: #33aaeb;
+  font-weight: 700;
+}
+.links {
+  width: 20rem;
+  padding: 10px;
+}
+.detail-items p {
+  font-size: 12px;
+  /* font-weight: 500; */
+  color: gray;
+}
+.components{
+  gap: 2rem;
+  margin: 0rem 2rem;
+}
+.items {
+  /* padding-right: 20px; */
+  padding: 1rem;
+  width: 250px;
+}
+/* Responsive  */
+
+@media screen and (max-width: 1455px) {
+  nav {
+    scale: 0.9;
+    height: 85px;
+    /* height: 23vh; */
+  }
+  .search {
+    width: 20rem;
+  }
+  .switch p,
+  .companies p {
+    font-size: 12px;
+  }
+  .sAndA {
+    scale: 0.95;
+  }
+  .profile,
+  .logo {
+    scale: 0.9;
+  }
+}
+
+@media screen and (max-width: 1255px) {
+  nav {
+    scale: 0.9;
+    height: 64px;
+  }
+  .search {
+    width: 20rem;
+  }
+  .switch p,
+  .companies p {
+    font-size: 12px;
+  }
+  .sAndA {
+    scale: 0.95;
+  }
+  .profile,
+  .logo {
+    scale: 0.7;
+  }
+  .navigations {
+    flex-direction: column;
+    gap: 0.5rem;
+    /* scale: 0.95; */
+  }
+  .navi-items:last-child {
+    scale: 0.95;
+    font-size: x-small;
+    margin-bottom: 10px;
+  }
+  .navi-items:first-child {
+    scale: 0.7;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1130px) {
+  nav {
+    scale: 0.8;
+    height: 75px;
+  }
+  .sAndA {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cola {
+    background-color: brown;
+  }
+  .sAndA {
+    flex-direction: column;
+  }
+  .graphs{
+    flex-direction: column;
+  }
+  .profile {
+    scale: 1;
+    justify-content: center;
+    margin: 15px;
+    /* text-align: center; */
+  }
+  .nav{
+    padding: 0;
+  }
+
+}
+@media screen and (max-width: 709px) {
+  .components {
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+  }
+  .links {
+    
+    width: -webkit-fill-available;
+    height: 50px;
+}
+.components{
+  gap: 1rem;
+  margin: 0rem 1rem;
+  align-items: start;
+}
+.navigations{
+  margin: 0rem ;
+  padding-right: 0px;
+  scale: 0.9;
+}
+main{
+  gap: 0;
+}
+.graph-details{
+  margin: 0rem 1rem;
+}
+.items{
+  padding:0px 0px 0px 20px;
+}
+/* .detail-items .items i{
+  scale: 0.7;
+} */
+.ww{
+  scale: 0.8;
+}
+.sc{
+  scale: 0.7;
+
+}
+
+}

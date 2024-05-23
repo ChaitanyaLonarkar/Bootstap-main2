@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DashBoard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white nav ">
+      <div class="logo d-flex align-items-center justify-content-around gap-2">
+        <img
+          class="rounded-4"
+          src="./img/logo.jpg"
+          alt="logo"
+          style="width: 4rem"
+        />
+        <h2 class="fs-5 m-0 fw-bold">
+          Olivia <br />
+          Miller
+        </h2>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="container-fluid">
+        <div
+          class="collapse bg-white cola navbar-collapse align-items-center justify-content-around gap-3"
+          id="navbarSupportedContent"
+        >
+          <div
+            class="sAndA d-flex align-items-center justify-content-center border-right border-left gap-4"
+          >
+            <div
+              class="search float-sm-end py-3 px-4 d-flex gap-3 rounded-3 align-items-center"
+              style="background-color: rgb(203 203 203 / 22%)"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                class="me-2 border-0 bg-transparent"
+                type="search"
+                placeholder="Search Dashboard"
+                aria-label="Search"
+                style="outline: none; font-size: 14px; width: 25rem"
+              />
+            </div>
+            <div
+              class="company d-flex align-items-center justify-content-center"
+            >
+              <div class="switch">
+                <p class="fw-bold text-blue px-5 py-3 border rounded-3 m-0">
+                  Switch Company
+                </p>
+              </div>
+              <div
+                class="companies d-flex align-items-center justify-content-between border rounded-3 px-5 py-3 gap-5"
+              >
+                <p class="fw-bold text-blue m-0">Olivia Miller</p>
+                <i class="fa-solid fa-chevron-down" style="color: #33aaeb"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile d-flex gap-3 align-items-center">
+            <div class="pic">
+              <img
+                class="rounded-4"
+                src="./img/profile.jpg"
+                alt="profile"
+                style="width: 3.7rem"
+              />
+            </div>
+            <div class="greet">
+              <p class="m-0" style="font-size: 14px">
+                Welcome back,
+                <br />
+                <span>Yossi!</span>
+              </p>
+            </div>
+            <i
+              class="fa-solid p-1 rounded-1 fa-chevron-down"
+              style="color: #33aaeb; background: rgb(231, 231, 231)"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar of the page -->
+    <!-- <nav class="navbar d-flex py-4 px-5 align-items-center justify-content-between ">
+      
+    </nav> -->
+    <!-- After navbar navigations -->
+    <main class="p-1 d-flex flex-column">
+      <div
+        class="navigations d-flex align-items-center rounded-4 "
+        style="background-color: white"
+      >
+        <div
+          class="navi-items d-flex gap-3 p-3 align-items-center justify-content-center rounded-4 text-white"
+          style="background-color: #59a6f6"
+        >
+          <i
+            class="fa-solid fa-gauge fs-5 p-2 rounded-4 bg-white fw-bold"
+            style="color: #59a6f6"
+          ></i>
+          <p class="m-0">Dashboard</p>
+        </div>
+        <div
+          class="navi-items gap-1 d-flex align-items-center flex-wrap justify-content-between w-100"
+        >
+          <div class="d-flex align-items-center gap-2">
+            <i class="fa-regular fa-circle-down fs-6 p-2 rounded-4"></i>
+            <p class="m-0 fw-bold">Receivable</p>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="fa-solid fa-circle-arrow-left fs-6 p-2 rounded-4"></i>
+            <p class="m-0 fw-bold">Return</p>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="fa-regular fa-user fs-6 p-2 rounded-4"></i>
+            <p class="m-0 fw-bold">Customer</p>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="fa-regular fa-credit-card fs-6 p-2 rounded-4"></i>
+            <p class="m-0 fw-bold">Payable</p>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="fa-solid fa-dollar-sign fs-6 p-2 rounded-4"></i>
+            <p class="m-0 fw-bold">Sales</p>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="fa-solid fa-bars fs-6 p-2 rounded-4"></i>
+            <p class="m-0 fw-bold">Inventory</p>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="fa-solid fa-arrow-down fs-6 p-2 rounded-4"></i>
+            <p class="m-0 fw-bold">Imports</p>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="fa-solid fa-tag fs-6 p-2 rounded-4"></i>
+            <p class="m-0 fw-bold">Cutting <br />Tickets</p>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i
+              class="fa-solid fa-arrow-right-arrow-left fs-6 p-2 rounded-4"
+            ></i>
+            <p class="m-0 fw-bold">EDI</p>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="fa-solid fa-location-dot fs-6 p-2 rounded-4"></i>
+            <p class="m-0 fw-bold">Sowroom</p>
+          </div>
+        </div>
+      </div>
+      <div class="components  d-flex justify-content-center">
+        <div class="links col-3 bg-white  rounded-4">
+          <div class="reports">
+            <div class="head d-flex gap-2 ps-3 pb-3 d-flex align-items-center">
+              <i
+                class="fa-solid fa-arrow-trend-up px-1 py-2 rounded-3 text-white d-flex align-items-center justify-content-center"
+                style="background-color: #59a6f6; width: 30px"
+              ></i>
+              <h5 class="fw-bold mb-0 fs-6">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#cola" aria-controls="cola" aria-expanded="false" aria-label="Toggle navigation">
+                Reports
+
+                </button>
+              </h5>
+            </div>
+            <div
+              class="reports-items "
+              id="cola" 
+            >
+              <div class="">
+                <ul class="list-group" style="text-decoration: none">
+                  <li
+                    class="list-group-item list-group-item-action border-0 rounded-3"
+                  >
+                    <a href="#">Company Snapshot</a>
+                  </li>
+                  <li
+                    class="list-group-item list-group-item-action border-0 rounded-3"
+                  >
+                    <a href="#"> Open Order Report</a>
+                  </li>
+                  <li
+                    style="width: 100%"
+                    class="list-group-item list-group-item-action border-0 activee rounded-3 d-flex align-items-center justify-content-between"
+                  >
+                    <a href="#">Cut & Sold Lookup </a>
+                    <i
+                      class="fa-solid fa-chevron-right text-white px-2 py-1 rounded-2"
+                      style="background-color: #33aaeb; font-size: 12px"
+                    ></i>
+                  </li>
+                  <li
+                    class="list-group-item list-group-item-action border-0 rounded-3"
+                  >
+                    <a href="#">Inventory Snap Shot</a>
+                  </li>
+                  <li
+                    class="list-group-item list-group-item-action border-0 rounded-3"
+                  >
+                    <a href="#"> Balance to Sell Sales Summary</a>
+                  </li>
+                  <li
+                    class="list-group-item list-group-item-action border-0 rounded-3"
+                  >
+                    <a href="#">Open Order to Pick</a>
+                  </li>
+                  <li
+                    class="list-group-item list-group-item-action border-0 rounded-3"
+                  >
+                    <a href="#">Period Comparison Report </a>
+                  </li>
+                  <li
+                    class="list-group-item list-group-item-action border-0 rounded-3"
+                  >
+                    <a href="#">Style Cost Report</a>
+                  </li>
+                  <li
+                    class="list-group-item list-group-item-action border-0 rounded-3"
+                  >
+                    <a href="#">Style Cost Report(Sales Person) </a>
+                  </li>
+                  <li
+                    class="list-group-item list-group-item-action border-0 rounded-3"
+                  >
+                    <a href="#">Shipping/Receiving Log</a>
+                  </li>
+                  <li
+                    class="list-group-item list-group-item-action border-0 rounded-3"
+                  >
+                    <a href="#">Receiving Summary</a>
+                  </li>
+                  <li
+                    class="list-group-item list-group-item-action border-0 rounded-3"
+                  >
+                    <a href="#">Style Availability By Date</a>
+                  </li>
+                  <li
+                    class="list-group-item list-group-item-action border-0 rounded-3"
+                  >
+                    <a href="#">Purchase Order Report</a>
+                  </li>
+                  <li
+                    class="list-group-item list-group-item-action border-0 rounded-3"
+                  >
+                    <a href="#">Shipping Report</a>
+                  </li>
+                  <li
+                    class="list-group-item list-group-item-action border-0 rounded-3"
+                  >
+                    <a href="#"> Traffic Report </a>
+                  </li>
+                  <li
+                    class="list-group-item list-group-item-action border-0 rounded-3"
+                  >
+                    <a href="#">Image Cut& sold Report</a>
+                  </li>
+                  <li
+                    class="list-group-item list-group-item-action border-0 rounded-3"
+                  >
+                    <a href="#">Style Sheets</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="graph-details col-xl justify-content-center">
+          <div class="dtails">
+            <div class="detail-items row row-cols-4 gap-3 flex-wrap">
+              <div
+                class="items col d-flex align-items-center bg-white rounded-4 gap-3"
+              >
+                <div
+                  class=" sc py-2 rounded-4 px-4 fs-2"
+                  style="color: orange; background: #f8eee1"
+                >
+                  <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+                <div class="ww">
+                  <h5 class="fw-bolder mb-0">$32,350.00</h5>
+                  <p class="m-0">Total Revenue</p>
+                </div>
+              </div>
+              <div
+                class="items col d-flex align-items-center bg-white rounded-4 gap-3"
+              >
+                <div
+                  class=" sc py-2 rounded-4 px-3 fs-2"
+                  style="color: #9a96fd; background: #e1edf2"
+                >
+                  <i class="fa-solid fa-arrow-up-right-dots"></i>
+                </div>
+                <div class="ww">
+                  <h5 class="fw-bolder mb-0">$6000</h5>
+                  <p class="m-0">Total Expenses</p>
+                </div>
+              </div>
+              <div
+                class="items d-flex align-items-center bg-white rounded-4 gap-3"
+              >
+                <div
+                  class=" sc py-2 rounded-4 px-3 fs-2"
+                  style="color: #48b2cf; background: #e1f6fb"
+                >
+                  <i class="fa-regular fa-credit-card"></i>
+                </div>
+                <div class="ww">
+                  <h5 class="fw-bolder mb-0">$56,034.00</h5>
+                  <p class="m-0">Accounts Receivable</p>
+                </div>
+              </div>
+              <div
+                class="items d-flex align-items-center bg-white rounded-4 gap-3"
+              >
+                <div
+                  class=" sc py-2 rounded-4 px-3 fs-2"
+                  style="color: #ee79b5; background: #f2eaf5"
+                >
+                  <i class="fa-regular fa-credit-card"></i>
+                </div>
+                <div class="ww">
+                  <h5 class="fw-bolder mb-0">$67,083.00</h5>
+
+                  <p class="m-0">Accounts payable</p>
+                </div>
+              </div>
+              <div
+                class="items d-flex align-items-center bg-white rounded-4 gap-3"
+              >
+                <div
+                  class=" sc py-2 rounded-4 px-3 fs-2"
+                  style="color: #fc8a31; background: #fbefe7"
+                >
+                  <i class="fa-regular fa-image"></i>
+                </div>
+                <div class="ww">
+                  <h5 class="fw-bolder mb-0">3,478</h5>
+                  <p class="m-0">Items missing <br />Images</p>
+                </div>
+              </div>
+              <div
+                class="items d-flex align-items-center bg-white rounded-4 gap-3"
+              >
+                <div
+                  class=" sc py-2 rounded-4 px-4 fs-2"
+                  style="color: #52bf54; background: #dbf6e1"
+                >
+                  <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+                <div class="ww">
+                  <h5 class="fw-bolder mb-0">237</h5>
+                  <p class="m-0">Items missing <br />FOB Costs</p>
+                </div>
+              </div>
+              <div
+                class="items d-flex align-items-center bg-white rounded-4 gap-3"
+              >
+                <div
+                  class=" sc py-2 rounded-4 px-4 fs-2"
+                  style="color: #bc80fc; background: #f0eefc"
+                >
+                  <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+                <div class="ww">
+                  <h5 class="fw-bolder mb-0">160</h5>
+                  <p class="m-0">PO Items <br />missing costs</p>
+                </div>
+              </div>
+              <div
+                class="items d-flex align-items-center bg-white rounded-4 gap-3"
+              >
+                <div
+                  class=" sc py-2 rounded-4 px-3 fs-2"
+                  style="color: #fac284; background: #f6f3f3"
+                >
+                  <i class="fa-regular fa-note-sticky"></i>
+                </div>
+                <div class="ww">
+                  <h5 class="fw-bolder mb-0">0/$0.00</h5>
+                  <p class="m-0">Booked</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid p-0 mt-4">
+            <div class="graphs row d-flex  flex-wrap gap-4 justify-content-evenly">
+              <div class="col card border-0 rounded-4">
+                <div id="chart"></div>
+              </div>
+              <div class="col card border-0 rounded-4">
+                <div id="chart2"></div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="container text-center card p-5 mt-4 mb-5 border-0 rounded-4 ms-0"
+          >
+            <div class="row">
+              <div class="col">
+                <img
+                  src="img/load.gif"
+                  width="30"
+                  height="30"
+                  class="d-inline"
+                />
+                Loading more...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script>
+    var options = {
+      series: [
+        {
+          name: "This week",
+          data: [31, 40, 28, 51, 42, 109, 100],
+        },
+        {
+          name: "Last week",
+          data: [11, 32, 45, 32, 34, 52, 41],
+        },
+      ],
+      chart: {
+        height: 350,
+        type: "area",
+        toolbar: {
+          show: false,
+        },
+      },
+      dataLabels: {
+        enabled: false,
+      },
+      stroke: {
+        curve: "smooth",
+      },
+      xaxis: {
+        type: "day",
+        categories: ["", "Sun", "Mon", "Tue", "Wed", "Thus", "Fri", "Sat"],
+      },
+      tooltip: {
+        x: {
+          format: "day",
+        },
+      },
+      legend: {
+        position: "top",
+        offsetY: 10,
+        offsetX: -360,
+      },
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+
+    var options = {
+      series: [
+        {
+          name: "Weigted",
+          data: [44, 55, 41, 67, 22, 43, 48],
+        },
+        {
+          name: "won",
+          data: [13, 23, 20, 8, 13, 27, 22],
+        },
+      ],
+      chart: {
+        type: "bar",
+        height: 350,
+        stacked: true,
+        toolbar: {
+          show: false,
+        },
+        zoom: {
+          enabled: true,
+        },
+      },
+      responsive: [
+        {
+          breakpoint: 480,
+          options: {
+            legend: {
+              position: "bottom",
+              offsetX: -10,
+              offsetY: 0,
+            },
+          },
+        },
+      ],
+      plotOptions: {
+        bar: {
+          width: 10,
+          horizontal: false,
+          borderRadius: 5,
+          borderRadiusApplication: "end", // 'around', 'end'
+          borderRadiusWhenStacked: "last", // 'all', 'last'
+          dataLabels: {
+            total: {
+              enabled: false,
+              style: {
+                fontSize: "13px",
+                fontWeight: 900,
+              },
+            },
+          },
+        },
+      },
+      xaxis: {
+        type: "category",
+        categories: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+      },
+      yaxis: {
+        min: 0,
+        max: 100,
+        tickAmount: 5,
+        labels: {
+          formatter: function (val) {
+            return "$" + 20 + "k";
+          },
+        },
+      },
+      legend: {
+        position: "top",
+        offsetY: 10,
+        offsetX: -360,
+      },
+      fill: {
+        opacity: 1,
+      },
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart2"), options);
+    chart.render();
+
+
+
+
+    function checkWidthAndUpdateClass() {
+      var element = document.getElementById
+      ("cola");
+      console.log(element)
+      console.log(window.innerWidth)
+      if (window.innerWidth <=710) {
+        element.classList.add("collapse");
+        element.classList.add("navbar-collapse");
+
+      } 
+      else {
+        element.classList.remove("collapse");
+        element.classList.remove("navbar-collapse");
+      }
+    }
+
+    // Check on load
+   checkWidthAndUpdateClass();
+
+    // Check on window resize
+    window.addEventListener("resize", checkWidthAndUpdateClass);
+  </script>
+</html>
